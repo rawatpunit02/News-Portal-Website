@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_Query</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+     <!-- <div class="main-nav container flex">
+
+        <div class="nav-links">
+            <ul class="flex">
+                <li class="hover-link nav-item" id="finance">Finance</li>
+                <li class="hover-link nav-item" id="sports">Sports</li>
+                <li class="hover-link nav-item" id="crypto">Crypto</li>
+                <li class="hover-link nav-item" id="international">
+                    International</li>
+                <li class="hover-link nav-item" id="technical">Technical</li>
+                <li class="hover-link nav-item" id="AI">AI</li>
+                <li class="hover-link nav-item" id="education">Education</li>
+            </ul>
+        </div>
+        <div class="search-bar flex">
+
+            <button id="search-button" class="search-button">Search</button>
+        </div>
+    </div> -->
+        <div class="main-nav  header-container   flex">
+          <div >
+            <a href="#"  onclick="reload()"  class="company-logo" >
+                <figure>
+                    <img src="images.png" alt="comapany logo">
+                    <!-- <figcaption >MENU BAR</figcaption> -->
+                </figure>      
+            </a>
+          </div>  
+            <div class="nav-link"> 
+                <ul class="flex"> 
+                  <li class="hover-link nav-item" id="india" onclick="reload()">Home</li>
+                  <li class="hover-link nav-item"   id="latest" onclick="onNavItemClick('latest')">Latest</li>
+                  <li class="hover-link nav-item"   id="Sports" onclick="onNavItemClick('Sports')">Sports</li> 
+                    <li class="hover-link nav-item"   id="Finance" onclick="onNavItemClick('Finance')">Finance</li> 
+                    <li class="hover-link nav-item"   id="Politics" onclick="onNavItemClick('Politics')">Politics</li> 
+                    <li class="hover-link nav-item"   id="Technology" onclick="onNavItemClick('Technology')">Technology</li> 
+                </ul>
+            </div>
+
+               <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="News.. ">
+                 <button class="search-button"  id="search-button">search</button>
+                          
+                </div>
+        </div>  
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex"  id="cards-container"  >
+          </div>
+          </main>
+
+      <template id="template-news-card">
+        <div class="card">
+
+            <div class="card-header">
+             <img src="https://via.placeholder.com/300x200" alt="news-img" id="news-img">
+            </div>
+
+             <div class="card-content">
+              <h3 id="news-title">this is the Title</h3>
+              <h5 class="news-source" id="news-source">End gadget 27/06/2033</h5>
+              <p class="new-desc" id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum modi debitis sunt cupiditate, totam ea nihil repellat rerum illo tempora nostrum neque impedit, veritatis soluta aut explicabo fugit, error facilis. </p>
+              <!-- <h6 class="news-source" id="news-source">End gadget 27/06/2033</h6> -->
+
+          </div>
+         </div>  
+      </template>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>
+              We are a dedicated team providing the latest news to college teachers and students. Stay updated with global news, sports, and politics.
+            </p>
+          </div>
+      
+          <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#" id="latest" onclick="onNavItemClick('latest')">News</a></li>
+              <li><a href="#" id="Sports" onclick="onNavItemClick('Sport')">Sports</a></li>
+              <li><a href="#" id="politics" onclick="onNavItemClick('politics')">Politics</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section contact-form">
+            <h2>Contact Us</h2>
+            <form action="#">
+              <input type="email" name="email" placeholder="Enter your email" required>
+              <textarea name="message" placeholder="Your message" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          &copy; 2024 News Portal | Designed for College Students and Teachers
+        </div>
+      </footer>
+    
+    
+      <script src="index.js"></script>
+
+</body>
+</html>
